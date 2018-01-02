@@ -1,0 +1,31 @@
+﻿body {
+}
+#Mail{
+    font-size: large;
+}
+#Password {
+    font-size: large;
+}
+#Password_TextBox{
+    margin-left: 11px;
+}
+#Mail_TextBox {
+    width: 120px;
+    
+    margin-left: 30px;
+}
+#div {    
+    width: 1000px;
+    height: 60px;
+    background-color: rgb(95,95,95);
+    position: center;
+}
+#div1{
+    margin-top: 100px;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(95,95,95);
+}
+#Sign_In_Real_Button {
+    width: 210px;
+}

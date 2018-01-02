@@ -1,0 +1,123 @@
+﻿
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="select"] {
+    max-width: 280px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+    .body-content {
+        padding: 0;
+    }
+}
+#body {
+    width: unset;
+    background-color:white;
+    font-size: xx-large;
+    font-style: italic; 
+}
+#body1 {
+    padding-top: 10px;
+    width: unset;
+    height: 200px;
+    background-color:white;
+    position: center;
+}
+#div {    
+    width: unset;
+    height: 60px;
+    //background-color: rgb(95,95,95);
+    position: center;
+}
+#div_btn {
+    padding-top: 4px;
+    padding-left: 1150px;
+    padding-right: 10px;
+    width: 300px;
+}
+#div1 {
+    padding-top: 10px;
+    //width: 700px;
+    //height: 500px;
+    background-color: white;
+    position: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+#form1 {
+    /*padding-top: 10px;*/
+    height: unset;
+}
+#Sign_Up_Button {
+    width: 73px;
+    height: 30px;
+    background-color: rgb(95,95,95);
+    border-color: rgb(95,95,95);
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: white;
+    border-bottom-color: white;
+    color:white;
+}
+
+#Sign_In_Button{
+    width: 73px;
+    height: 30px;
+    background-color: rgb(95,95,95);
+    border-color: rgb(95,95,95);
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: white;
+    border-bottom-color: white;
+    color:white;
+}
+#DefaultEmlak {
+    position: center;
+    width: 700px;
+    height: 200px;
+}
+#labelInfo {
+    width: 700px;
+    height: 200px;
+    margin: 0px unset;
+    text-align: center;
+    position: center;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

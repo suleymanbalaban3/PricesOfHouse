@@ -1,0 +1,60 @@
+﻿body {
+}
+#Name{
+    font-size: large;
+}
+#Surname {
+    font-size: large;
+}
+#Mail{
+    font-size: large;
+}
+#Password {
+    font-size: large;
+}
+#Name_TextBox{
+    margin-left: 40px;
+    width: 120px;  
+}
+#Surname_TextBox {
+    width: 120px;
+    margin-left: 20px;
+    width: 120px;  
+}
+#Password_TextBox{
+    margin-left: 14px;
+    width: 120px;  
+}
+#Mail_TextBox {
+    width: 120px;   
+    margin-left: 36px;
+}
+#div {    
+    width: 1000px;
+    height: 60px;
+    background-color: rgb(95,95,95);
+    position: center;
+}
+#div1{
+    margin-top: 100px;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(95,95,95);
+}
+#Sign_Up_Real_Button {
+    width: 214px;
+}
+#Sign_In_Button{
+    width: 73px;
+    height: 30px;
+    background-color: rgb(95,95,95);
+    border-color: rgb(95,95,95);
+    border-top-color: white;
+    border-left-color: white;
+    border-right-color: white;
+    border-bottom-color: white;
+    margin-top: 15px;
+    right: 200px;
+    position:absolute;
+    color:white;
+}

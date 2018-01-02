@@ -1,0 +1,61 @@
+﻿body {
+}
+#Age{
+    font-size: large;
+}
+#Room {
+    font-size: large;
+}
+#Floor{
+    font-size: large;
+}
+#Square {
+    font-size: large;
+}
+#Info{
+    font-size: large;
+}
+#Request {
+    font-size: large;
+}
+#HouseAge{
+    margin-left: 40px;
+    width: 120px;  
+}
+#RoomNumber {
+    width: 120px;
+    margin-left: 20px;
+    width: 120px;  
+}
+#FloorNumber{
+    margin-left: 14px;
+    width: 120px;  
+}
+#SquareMeter {
+    width: 120px;   
+    margin-left: 36px;
+}
+#Information{
+    margin-left: 14px;
+    width: 120px;  
+}
+#RequestedPrice{
+    margin-left: 14px;
+    width: 120px;  
+}
+
+#div {    
+    width: 1000px;
+    height: 60px;
+    background-color: rgb(95,95,95);
+    position: center;
+}
+#div1{
+    margin-top: 100px;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(95,95,95);
+}
+#Sign_Up_Real_Button {
+    width: 214px;
+}
