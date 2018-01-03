@@ -20,11 +20,12 @@ namespace HouseOfPrices
 {
     public partial class _Default : Page
     {
-        public DataSet ds = new DataSet();
+        public static DataSet ds = new DataSet();
+        public static List<AdvertsIterations> ad;
 
         static _Default()
         {
-            AdvertsIterations ad = new AdvertsIterations();
+            ad = new List<AdvertsIterations>();
         }
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -75,8 +76,9 @@ namespace HouseOfPrices
                 Response.Write("<script LANGUAGE='JavaScript' >alert('Hata')</script>");
             }
 
-
-            for (i = 0; i < ds.Tables[0].Rows.Count && i < 9; i++)
+            if (ds.Tables[0].Rows.Count > 8)
+                i = ds.Tables[0].Rows.Count - 9;
+            for (; i < ds.Tables[0].Rows.Count; i++)
             {
                 if (ds.Tables[0].Rows[i][0].ToString() == null)
                     break;
@@ -114,7 +116,7 @@ namespace HouseOfPrices
 
                     ozellik = Data.GetType().GetProperty("AdvertId");
                     ozellik.SetValue(Data, int.Parse(ds.Tables[0].Rows[i][0].ToString()), null);
-
+                    //ad.Add(new AdvertsIterations(int.Parse(ds.Tables[0].Rows[i][0].ToString())));
                     ozellik = Data.GetType().GetProperty("Picture");
                     
                     Image img = null;
