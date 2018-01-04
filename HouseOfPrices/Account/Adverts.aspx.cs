@@ -18,6 +18,7 @@ namespace HouseOfPrices.Account
             string session = Session["AdvertId"].ToString();
             String Latitude = _Default.ds.Tables[0].Rows[int.Parse(session)][1].ToString();
             String Longitude = _Default.ds.Tables[0].Rows[int.Parse(session)][2].ToString();
+            String RequestedPrice, EstimatedPrice;
 
             Latitude = Latitude.Replace(",", ".");
             Longitude = Longitude.Replace(",", ".");
@@ -40,8 +41,16 @@ namespace HouseOfPrices.Account
             AgeText.Text = _Default.ds.Tables[0].Rows[int.Parse(session)][7].ToString();
             HeatingText.Text = _Default.ds.Tables[0].Rows[int.Parse(session)][8].ToString();
             ProximityToTranportationText.Text = _Default.ds.Tables[0].Rows[int.Parse(session)][9].ToString();
-            RequestedPriceText.Text = _Default.ds.Tables[0].Rows[int.Parse(session)][13].ToString();
-            EstimatedPriceText.Text = _Default.ds.Tables[0].Rows[int.Parse(session)][14].ToString();
+
+           /* RequestedPriceText.Text = _Default.ds.Tables[0].Rows[int.Parse(session)][13].ToString();
+            EstimatedPriceText.Text = _Default.ds.Tables[0].Rows[int.Parse(session)][14].ToString();*/
+            RequestedPrice = _Default.ds.Tables[0].Rows[int.Parse(session)][13].ToString();
+            EstimatedPrice = _Default.ds.Tables[0].Rows[int.Parse(session)][14].ToString();
+            MoneyTypeGenerator _MoneyTypeGenerator = new MoneyTypeGenerator();
+            RequestedPrice = _MoneyTypeGenerator.getMoneyTypeNumber(RequestedPrice);
+            EstimatedPrice = _MoneyTypeGenerator.getMoneyTypeNumber(EstimatedPrice);
+            RequestedPriceText.Text = RequestedPrice;
+            EstimatedPriceText.Text = EstimatedPrice;
             InformationText.Text = _Default.ds.Tables[0].Rows[int.Parse(session)][11].ToString();
 
 

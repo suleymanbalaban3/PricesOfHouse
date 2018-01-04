@@ -217,7 +217,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6v5-2uaq_wusHDktM9ILcqIr
                         <td class="style33">
                             :</td>
                         <td>
-                            <asp:textbox id="InformationText" runat="server" height="200px" width="50%" ReadOnly="true"></asp:textbox>
+                            <asp:textbox id="InformationText" runat="server" height="200px" width="50%" ReadOnly="true" ></asp:textbox>
 
                         </td>
                     </tr>

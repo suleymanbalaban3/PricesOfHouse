@@ -76,8 +76,8 @@ namespace HouseOfPrices
                 Response.Write("<script LANGUAGE='JavaScript' >alert('Hata')</script>");
             }
 
-            if (ds.Tables[0].Rows.Count > 8)
-                i = ds.Tables[0].Rows.Count - 9;
+            if (ds.Tables[0].Rows.Count > 10)
+                i = ds.Tables[0].Rows.Count - 11;
             for (; i < ds.Tables[0].Rows.Count; i++)
             {
                 if (ds.Tables[0].Rows[i][0].ToString() == null)
@@ -97,10 +97,10 @@ namespace HouseOfPrices
                     ozellik.SetValue(Data, ds.Tables[0].Rows[i][5].ToString(), null);
 
                     ozellik = Data.GetType().GetProperty("RoomNumber");
-                    ozellik.SetValue(Data, ds.Tables[0].Rows[i][3].ToString(), null);
+                    ozellik.SetValue(Data, ds.Tables[0].Rows[i][3].ToString() + " + " + ds.Tables[0].Rows[i][4].ToString(), null);
 
                     ozellik = Data.GetType().GetProperty("SquareMeter");
-                    ozellik.SetValue(Data, ds.Tables[0].Rows[i][6].ToString(), null);
+                    ozellik.SetValue(Data, ds.Tables[0].Rows[i][6].ToString() + " m2", null);
 
                     ozellik = Data.GetType().GetProperty("Price");
                     ozellik.SetValue(Data, ds.Tables[0].Rows[i][13].ToString(), null);
@@ -115,7 +115,7 @@ namespace HouseOfPrices
                         ozellik.SetValue(Data, true, null);
 
                     ozellik = Data.GetType().GetProperty("AdvertId");
-                    ozellik.SetValue(Data, int.Parse(ds.Tables[0].Rows[i][0].ToString()), null);
+                    ozellik.SetValue(Data, int.Parse(ds.Tables[0].Rows[i-1][0].ToString()), null);
                     //ad.Add(new AdvertsIterations(int.Parse(ds.Tables[0].Rows[i][0].ToString())));
                     ozellik = Data.GetType().GetProperty("Picture");
                     

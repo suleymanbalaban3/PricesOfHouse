@@ -12,7 +12,7 @@ namespace HouseOfPrices
 {
     public partial class DataUserControl : System.Web.UI.UserControl
     {
-        
+        MoneyTypeGenerator _MoneyTypeGenerator = new MoneyTypeGenerator();
         protected void Page_Load(object sender, EventArgs e)
         {
            
@@ -76,7 +76,7 @@ namespace HouseOfPrices
             }
             set
             {
-                col5.Text = value;
+                col5.Text = _MoneyTypeGenerator.getMoneyTypeNumber(value);
             }
         }
         public string Estimated
@@ -87,7 +87,7 @@ namespace HouseOfPrices
             }
             set
             {
-                col6.Text = value;
+                col6.Text = _MoneyTypeGenerator.getMoneyTypeNumber(value);
             }
         }
         public string FloorNum
@@ -136,8 +136,8 @@ namespace HouseOfPrices
             set
             {
                 picture.Src = value;
-                picture.Height = 50;
-                picture.Width = 75;
+                picture.Height = 40;
+                picture.Width = 55;
                                
             }
         }
