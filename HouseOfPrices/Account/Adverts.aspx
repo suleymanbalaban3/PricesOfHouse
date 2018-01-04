@@ -202,6 +202,15 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6v5-2uaq_wusHDktM9ILcqIr
 
                         </td>
                     </tr>
+                    <tr id="special_row" runat="server">
+                        <td class="style22">
+                            Estimated Price</td>
+                        <td class="style33">
+                            :</td>
+                        <td>
+                            <asp:Label id="EstimatedPriceText" runat="server" width="200px"/>
+                        </td>
+                    </tr>
                     <tr>
                         <td class="style22">
                             Information</td>

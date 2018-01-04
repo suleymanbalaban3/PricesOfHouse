@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.Owin;
+using Owin;
 
 namespace HouseOfPrices.Account
 {
@@ -38,10 +41,16 @@ namespace HouseOfPrices.Account
             HeatingText.Text = _Default.ds.Tables[0].Rows[int.Parse(session)][8].ToString();
             ProximityToTranportationText.Text = _Default.ds.Tables[0].Rows[int.Parse(session)][9].ToString();
             RequestedPriceText.Text = _Default.ds.Tables[0].Rows[int.Parse(session)][13].ToString();
+            EstimatedPriceText.Text = _Default.ds.Tables[0].Rows[int.Parse(session)][14].ToString();
             InformationText.Text = _Default.ds.Tables[0].Rows[int.Parse(session)][11].ToString();
 
-            
-            
+
+            string Mail = Context.User.Identity.GetUserName();
+
+            if (Mail == "" || Mail == null)
+            {
+                special_row.Visible = false;
+            }
 
         }
     }
