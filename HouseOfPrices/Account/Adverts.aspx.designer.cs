@@ -103,6 +103,15 @@ namespace HouseOfPrices.Account {
         protected global::System.Web.UI.WebControls.Label ProximityToTranportationText;
         
         /// <summary>
+        /// CityText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label CityText;
+        
+        /// <summary>
         /// RequestedPriceText control.
         /// </summary>
         /// <remarks>

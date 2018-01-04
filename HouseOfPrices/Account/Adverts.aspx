@@ -104,7 +104,8 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6v5-2uaq_wusHDktM9ILcqIr
                  <%--<input type="text" id="txtlat" hidden="hidden"/>
                 <input type="text" id="txtlon" hidden="hidden"/> --%>
             <input id="work" type="button" value="Submit" onclick="javascript: initialize()" hidden="hidden"/>
-                <div id="map_canvas" style="width: 500px; height: 400px"></div>
+            <div id="map_canvas" style="width: 800px; height: 400px"></div>
+                
         </center> 
 
 
@@ -140,7 +141,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6v5-2uaq_wusHDktM9ILcqIr
                     
                     <tr>
                         <td class="style22">
-                           Room Number</td>
+                           Room</td>
                         <td class="style33">
                             :</td>
                         <td>
@@ -148,9 +149,9 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6v5-2uaq_wusHDktM9ILcqIr
                         </td>
                     </tr>
                     <tr>
-                        <td class="style22">
+                        <td class="style22" style="border-right:hidden">
                             Floor Number</td>
-                        <td class="style33">
+                        <td class="style33" style="border-right:hidden">
                             :</td>
                         <td>
                             <asp:Label id="FloorNumberText" runat="server" maxlength="2" width="200px"/>
@@ -166,9 +167,9 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6v5-2uaq_wusHDktM9ILcqIr
                         </td>
                     </tr>
                     <tr>
-                        <td class="style22">
+                        <td class="style22" style="border-right:hidden">
                             House Age</td>
-                        <td class="style33">
+                        <td class="style33" style="border-right:hidden">
                             :</td>
                         <td>
                             <asp:Label id="AgeText" runat="server" width="200px"/>
@@ -184,9 +185,9 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6v5-2uaq_wusHDktM9ILcqIr
                         </td>
                     </tr>
                     <tr>
-                        <td class="style22">
+                        <td class="style22" style="border-right:hidden">
                             Proximity To Transportation</td>
-                        <td class="style33">
+                        <td class="style33" style="border-right:hidden">
                             :</td>
                         <td>
                             <asp:Label id="ProximityToTranportationText" runat="server" width="200px" />
@@ -194,8 +195,17 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6v5-2uaq_wusHDktM9ILcqIr
                     </tr>
                     <tr>
                         <td class="style22">
-                            Requested Price</td>
+                            City</td>
                         <td class="style33">
+                            :</td>
+                        <td>
+                            <asp:Label id="CityText" runat="server" width="200px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style22" style="border-right:hidden">
+                            Requested Price</td>
+                        <td class="style33" style="border-right:hidden">
                             :</td>
                         <td>
                             <asp:Label id="RequestedPriceText" runat="server" width="200px"/>
@@ -212,12 +222,12 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6v5-2uaq_wusHDktM9ILcqIr
                         </td>
                     </tr>
                     <tr>
-                        <td class="style22">
+                        <td class="style22" style="border-right:hidden">
                             Information</td>
-                        <td class="style33">
+                        <td class="style33" style="border-right:hidden">
                             :</td>
                         <td>
-                            <asp:textbox id="InformationText" runat="server" height="200px" width="50%" ReadOnly="true" ></asp:textbox>
+                            <asp:textbox id="InformationText" runat="server" height="200px" width="70%" ReadOnly="true" st></asp:textbox>
 
                         </td>
                     </tr>

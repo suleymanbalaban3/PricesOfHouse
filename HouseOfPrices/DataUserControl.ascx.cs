@@ -127,6 +127,17 @@ namespace HouseOfPrices
                 lbtn.ID = value.ToString();
             }
         }
+        public string City
+        {
+            get
+            {
+                return City_Label.Text;
+            }
+            set
+            {
+                City_Label.Text = value;
+            }
+        }
         public String Picture
         {
             get

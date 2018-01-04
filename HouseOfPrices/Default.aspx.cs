@@ -102,11 +102,19 @@ namespace HouseOfPrices
                     ozellik = Data.GetType().GetProperty("SquareMeter");
                     ozellik.SetValue(Data, ds.Tables[0].Rows[i][6].ToString() + " m2", null);
 
+                    ozellik = Data.GetType().GetProperty("City");
+                    ozellik.SetValue(Data, ds.Tables[0].Rows[i][16].ToString(), null);
+
                     ozellik = Data.GetType().GetProperty("Price");
                     ozellik.SetValue(Data, ds.Tables[0].Rows[i][13].ToString(), null);
 
                     ozellik = Data.GetType().GetProperty("Estimated");
+
+                    //CityFinder _CityFinder = new CityFinder();
+                    //String PlateCode =_CityFinder.getPlateCode(ds.Tables[0].Rows[i][1].ToString(), ds.Tables[0].Rows[i][2].ToString());
+
                     ozellik.SetValue(Data, ds.Tables[0].Rows[i][14].ToString(), null);
+                    //ozellik.SetValue(Data, PlateCode, null);
 
                     ozellik = Data.GetType().GetProperty("IsLogin");
                     if(!LoginSucces)

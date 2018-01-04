@@ -67,6 +67,15 @@ namespace HouseOfPrices {
         protected global::System.Web.UI.HtmlControls.HtmlTableCell col7;
         
         /// <summary>
+        /// City_Col control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableCell City_Col;
+        
+        /// <summary>
         /// col5 control.
         /// </summary>
         /// <remarks>

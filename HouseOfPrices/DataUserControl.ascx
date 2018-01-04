@@ -46,6 +46,13 @@
                 </asp:label>
             </div>
         </th>
+         <th runat="server" style="width:70px;border-left: 1px solid #fff;padding: 3px 3px 0 3px;background-color:#cac5c5;text-align:center;">
+            <div runat="server">
+                <asp:label id="City_Label" runat="server"  Font-Bold="false">
+
+                </asp:label>
+            </div>
+        </th>
         <th runat="server" style="width:70px;border-left: 1px solid #fff;padding: 3px 3px 0 3px;background-color:#cac5c5;text-align:center;">
             <div runat="server">
                 <asp:label id="col5" runat="server"  Font-Bold="false">

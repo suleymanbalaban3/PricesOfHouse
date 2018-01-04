@@ -15,6 +15,7 @@
             <th runat="server" id="col2" style="width:70px;text-align:center">Age</th>
             <th runat="server" id="col3" style="width:250px;text-align:center">Information</th>
             <th runat="server" id="col7" style="width:70px;text-align:center">Floor</th>
+            <th runat="server" id="City_Col" style="width:70px;text-align:center">City</th>
             <th runat="server" id="col5" style="width:70px;text-align:center">Price</th>
             <th runat="server" id="col6" style="width:100px;text-align:center">Estimated</th>
             

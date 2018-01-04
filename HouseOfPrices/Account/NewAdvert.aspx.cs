@@ -84,7 +84,7 @@ namespace HouseOfPrices.Account
                     SqlConnection Cnn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringName"].ToString());
                     SqlCommand Cmd = new SqlCommand();
                     Cmd.CommandType = CommandType.StoredProcedure;
-                    Cmd.CommandText = "InsertAdvert";
+                    Cmd.CommandText = "InsertAdvertLast";
 
                     MineHouse.CoordinateX = LattValue;
                     MineHouse.CoordinateY = LonnValue;
@@ -96,6 +96,10 @@ namespace HouseOfPrices.Account
                     MineHouse.Heating = HeatingNumber;
                     MineHouse.ProximityToTransportation = ProximityTransportation;
                     MineHouse.RequestedPrice = int.Parse(RequestedPrice.Text);
+
+                    CityFinder _CityFinder = new CityFinder();
+                    String City = _CityFinder.getCity(LattValue.ToString(), LonnValue.ToString());
+
 
                     Cmd.Parameters.AddWithValue("@X_Coordinate", LattValue);
                     Cmd.Parameters.AddWithValue("@Y_Coordinate", LonnValue);
@@ -112,6 +116,7 @@ namespace HouseOfPrices.Account
                     Cmd.Parameters.AddWithValue("@Requested_Price", int.Parse(RequestedPrice.Text));
                     Cmd.Parameters.AddWithValue("@Estimated_Price", EstimatedPrice());
                     Cmd.Parameters.AddWithValue("@Insert_Time", date);
+                    Cmd.Parameters.AddWithValue("@City", City);
                     Cmd.Connection = Cnn;
                     if (Cnn.State == ConnectionState.Closed) Cnn.Open();
                     int result = Cmd.ExecuteNonQuery();
