@@ -1,0 +1,6 @@
+c:\users\suleyman\documents\visual studio 2013\Projects\TrainAdverts\TrainAdverts\bin\Debug\TrainAdverts.exe.config
+c:\users\suleyman\documents\visual studio 2013\Projects\TrainAdverts\TrainAdverts\bin\Debug\TrainAdverts.exe
+c:\users\suleyman\documents\visual studio 2013\Projects\TrainAdverts\TrainAdverts\bin\Debug\TrainAdverts.pdb
+c:\users\suleyman\documents\visual studio 2013\Projects\TrainAdverts\TrainAdverts\obj\Debug\TrainAdverts.csprojResolveAssemblyReference.cache
+c:\users\suleyman\documents\visual studio 2013\Projects\TrainAdverts\TrainAdverts\obj\Debug\TrainAdverts.exe
+c:\users\suleyman\documents\visual studio 2013\Projects\TrainAdverts\TrainAdverts\obj\Debug\TrainAdverts.pdb
